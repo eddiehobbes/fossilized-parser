@@ -9,7 +9,7 @@ namespace Prehistoric
 {
     public class FileDownload
     {
-        public void Download(string address, string fileName)
+        public void Download(Uri address, string fileName)
         {
             WebClient client = new WebClient();
 

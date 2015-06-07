@@ -1,4 +1,7 @@
-﻿using System;
+﻿using jurassic.Engine;
+using jurassic.Engine.PDFTransform;
+using Prehistoric;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,6 +13,9 @@ namespace jurassic
     {
         static void Main(string[] args)
         {
+            FossilizedParser parser = new FossilizedParser(new FileDownload(), new PDFTextTransformer());
+            parser.Run(args);
+
         }
     }
 }
