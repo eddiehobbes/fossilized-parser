@@ -42,7 +42,6 @@ namespace jurassic.Engine
             downloader.Download(target, src);
             transformer.Transform(src, dest);
             var test = transformer.TransformToText(src);
-            //var test = transformer.TransformToText_PDF2Text(src);
             File.WriteAllLines(dest, test);
         }
     }
